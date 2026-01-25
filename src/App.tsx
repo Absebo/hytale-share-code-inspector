@@ -1,5 +1,5 @@
 import type { Component } from "solid-js";
-import ShareCodeInspector from "./ShareCodeInspector";
+import ShareCodeInspector from "./page/ShareCodeInspector";
 
 const App: Component = () => {
     return (

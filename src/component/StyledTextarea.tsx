@@ -3,7 +3,6 @@ import { JSX } from "solid-js";
 export function StyledTextarea(
     props: JSX.TextareaHTMLAttributes<HTMLTextAreaElement>,
 ) {
-    console.info(props.class);
     return (
         <textarea
             {...props}
