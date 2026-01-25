@@ -6,7 +6,7 @@ const shareCodeSchema = z.object({
     HostUuid: z.string(),
     ServerName: z.string(),
     Password: z.optional(z.string()),
-    ExpiresAt: z.string(),
+    ExpiresAt: z.coerce.date(),
     Candidates: z.array(
         z.object({
             Type: z.enum(["Host", "UPnP", "ServerReflexive"]),

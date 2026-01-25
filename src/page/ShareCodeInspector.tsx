@@ -8,12 +8,10 @@ import {
 } from "../logic/hytale-share-code";
 import { formatZodError } from "../logic/format-error";
 import { StyledButton } from "../component/StyledButton";
-import { StyledTextarea } from "../component/StyledTextarea";
-import { CopyToClipboardButton } from "../component/CopyToClipboardButtom";
 import { TextareaWithCopy } from "../component/TextareaWithCopy";
 
 const DEFAULT_SHARE_CODE =
-    "PY5NiwIxDIb/ytKzlcaZrdu5iSx4URYcEVz2UKdRCrN2SOvHIP5300FMckjyJk9yF4sQ08r+o6jEsq8xpndjNGibs3esHQih0BakbsxeluZLy/1UOQmTovxEaxqwDW+skS5IL97an44tdq3tkT62gVrHEz82xmugzHynI/F96zxhnCVuT1ShpAIJtVLVEGM12I4H5/bkvLMJo6h+76Luu3wpP8rizDmGsCJAmzFkzxcDMbY0egpckA/kUy8qYOLj7/EE";
+    "PY5Ri8IwDMe/S5+tNG5X7d6GHPiiHDgRPO6hrvEoTDvS3ukQv7vpEJM8JPknv+QuViGmjT2jqMR6aDCmd2Myars/71g7EUKhLUjdmqMszULL41w5CbOi/EBrWrAtb2yR/pFevK2//HbYd3ZA2gfqHA982RivgTLynU7E5633hLFO3J6pQkkFHI1S1RhTNdqBJ5f24ryzCaOovu+iGfp8KT/KYu0cU1gRoM0UsueTgZhbGj0HLsgH8mkQFTDx8fN4Ag==";
 
 export default function ShareCodeInspector() {
     const [shareCode, setShareCode] = createSignal("");
@@ -116,7 +114,7 @@ export default function ShareCodeInspector() {
             <Show when={errorsAndWarnings().length > 0}>
                 <div class="bg-red-400 rounded-lg p-3">
                     <span>Errors:</span>
-                    <ul>
+                    <ul class="list-disc ml-4">
                         <For each={errorsAndWarnings()}>
                             {(item) => <li>{item}</li>}
                         </For>
