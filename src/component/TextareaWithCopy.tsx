@@ -8,7 +8,7 @@ export function TextareaWithCopy(
     return (
         <div class="relative">
             <CopyToClipboardButton
-                class="absolute right-0 bottom-0"
+                class="absolute right-2 bottom-2"
                 value={String(props.value)}
             />
             <StyledTextarea {...props}></StyledTextarea>
