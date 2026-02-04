@@ -21,9 +21,9 @@ const App: Component = () => {
                 <ShareCodeInspector />
                 <article class="mt-5">
                     Note that this is a fully client side tool. The Hytale share
-                    code is base64 encoded. This tool will decode the base64
-                    encoded share code. After that it applies a raw deflate
-                    compression and show the result.
+                    code is base64 encoded and compressed. This tool will decode
+                    the share code by base64-decoding it and applying raw
+                    DEFLATE decompression to obtain the decoded JSON share code.
                 </article>
             </main>
         </>
