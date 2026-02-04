@@ -7,7 +7,7 @@ const App: Component = () => {
             <div class="flex justify-between items-center px-8 py-1">
                 <nav>
                     <a
-                        class="px-2 py-1 text-2xl rounded-lg bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 hover:shadow-md active:bg-indigo-800 active:shadow-inner transition-all duration-200"
+                        class="px-2 pb-0.75 text-3xl rounded-lg bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 hover:shadow-md active:bg-indigo-800 active:shadow-inner transition-all duration-200"
                         href="/"
                     >
                         ←
